@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Notes</title>
+    <link rel="stylesheet" href="css/NoteStyle.css">
+
+    <script>
+        paypal.Buttons({
+            style: {
+                shape: 'rect',
+                color: 'blue',
+                layout: 'vertical',
+                label: 'subscribe'
+            },
+            createSubscription: function (data, actions) {
+                return actions.subscription.create({
+                    /* Creates the subscription */
+                    plan_id: 'P-8EP034435S333814CMNYIFEQ'
+                });
+            },
+            onApprove: function (data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+            }
+        }).render('#paypal-button-container-P-8EP034435S333814CMNYIFEQ'); // Renders the PayPal button
+    </script>
+     <script src="js/NoteStyle.js"></script>
+</head>
+<body>
+
+    
+<div>
+    <strong><em> HTML Notes !</em></strong> <!-- Markup refers to how you can structure or format content. -->
+    <p>its <mark>paragragh</mark> tag</p>
+    <sup>how can i use sup with p like pen</sup>
+    <sub>how can u use sub with b like book</sub>
+    <hr>
+    <p> a7a ya sama7</p>
+
+</div>
+
+
+
+<div>
+    <ul>
+        <li>Mammals</li>
+            <ol>
+                <li>Raccons</li>
+                <li>Gorillas</li>
+            </ol>
+        <li>Reptiles</li>
+            <ol>
+                <li>Iguanas</li>
+                <li>Cobras</li>
+            </ol>
+        <li>Birds</li>
+        <ol>
+            <li>Ostriches</li>
+            <li>Ravens</li>
+        </ol>
+    </ul>
+</div>
+
+<p>These are some red red words.</p>
+<ol>
+    <li>Apple apple berry berry sauce sauce sauce.<br>
+        
+    <li>Betty bought a bit of butter,<br>
+    <li>Crisp cookies claim Charlie's cookout crown.<br>
+    <li>Daring drivers drove down Devil's Ditch in Dodges.
+    <li>Evil eggs explode everywhere. Eww!
+</ol>
+
+<div>
+    <!--Padding is the space inside the border
+        Margin is the space outside the border -->
+    <style> 
+        .fancybox {
+            border:5px solid green ;
+            margin: 1em;    
+            padding: .5px;
+        }
+    </style>
+
+    <div>
+        <p class="fancybox">
+            hello margin text with margin
+        </p>
+    </div>
+
+</div>
+
+
+
+<div>
+    <a href="https://www.google.com">Google</a>
+</div>
+
+<div class="container">
+    <div class="box red">red</div>
+    <div class="box green">green</div>
+    <div class="box yellow">yellow</div>
+
+    <ul class="xo">
+        <li>X
+        <li>
+        <li>O
+    
+        <li>
+        <li>X
+        <li>O
+    
+        <li>X
+        <li>O
+        <li>
+    </ul>
+    
+</div>
+
+
+
+
+
+
+</body>
+</html>

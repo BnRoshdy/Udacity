@@ -1,0 +1,114 @@
+body {
+    font: normal small-caps normal 16px/1.4 Georgia;
+}
+
+/* is the same as: */
+
+body {
+  font-family: Georgia;
+  line-height: 1.4;
+  font-weight: normal;
+  font-stretch: normal;
+  font-variant: small-caps;
+  font-size: 16px;
+  
+}
+/* ######################################################### */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 50px flex;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+#id{
+}
+
+.xo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+}
+
+.xo ul {
+  display:flex;
+  flex-wrap:wrap;
+  width:350px;
+  height:350px;
+}
+
+.xo li {
+  margin:6px;
+  width:100px;
+  height:100px;
+  text-align:center;
+  font-size: 60pt;
+  font-weight:bold;
+  list-style: none;
+  background-color:#c2e7ff;
+}
+
+
+
+
+
+
+/* ######################################################### */
+
+p {
+    font-family:'Tangerine', 'Trebuchet MS', 'Lucida Sans Unicode',
+     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: purple;
+    border: 1px solid red;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14pt;
+    text-decoration: underline;
+
+    font;
+    
+}
+
+div {
+    border: 1px solid blue;
+}
+
+ol {
+    
+    display: flex;
+}
+
+li {
+    
+    margin: 20px;
+    /* color:rgb(00%,00%,00%); */
+    color: #0000ff;
+}
+
+/* a {
+    :#-2b3e4;
+    :rgb(1%,70%,89%);
+    :rgb:(2,179,228);
+} */
