@@ -102,40 +102,44 @@
 //         document.getElementById("navbar").style.top = "-50px";
 //     }
 // }
+// const mainSection = document.querySelector('Section');
 
-let select = document.createElement("select");
-select.setAttribute('id' , 'mobile');
+// mainSection.addEventListener('animationstart', function () {
+//     console.log('The heading was clicked!');
+// });
 
-let first = document.createElement("option");
-first.innerHTML = "Navigation";
-first.setAttribute('selected', 'selected');
-select.appendChild(first);
+// let select = document.createElement("select");
+// select.setAttribute('id' , 'mobile');
 
+// let first = document.createElement("option");
+// first.innerHTML = "Navigation";
+// first.setAttribute('selected', 'selected');
+// select.appendChild(first);
 
-let navbar__menu = document.getElementById('navbar__menu');
-let loadLinks = function (element, hyphen, level) {
+// let navbar__menu = document.getElementById('navbar__menu');
+// let loadLinks = function (element, hyphen, level) {
 
-    let e = element;
-    let children = e.children;
+//     let e = element;
+//     let children = e.children;
 
-    for (let i = 0; i < e.children.length; ++i) {
+//     for (let i = 0; i < e.children.length; ++i) {
 
-        let currentLink = children[i];
+//         let currentLink = children[i];
 
-        switch (currentLink.nodeName) {
-            case 'A':
-                let option = document.createElement('option');
-                option.innerHTML = (level++ < 1 ? '' : hyphen) + currentLink.innerHTML;
-                option.value = currentLink.href;
-                select.appendChild(option);
-                break;
-            default:
-                if (currentLink.nodeName === 'UL') {
-                    (level < 2) || (hyphen += hyphen);
-                }
-                loadLinks(currentLink, hyphen, level);
-                break;
-        }
-    }
-}
-loadLinks(navbar__menu, '- ', 0);
+//         switch (currentLink.nodeName) {
+//             case 'A':
+//                 let option = document.createElement('option');
+//                 option.innerHTML = (level++ < 1 ? '' : hyphen) + currentLink.innerHTML;
+//                 option.value = currentLink.href;
+//                 select.appendChild(option);
+//                 break;
+//             default:
+//                 if (currentLink.nodeName === 'UL') {
+//                     (level < 2) || (hyphen += hyphen);
+//                 }
+//                 loadLinks(currentLink, hyphen, level);
+//                 break;
+//         }
+//     }
+// }
+// loadLinks(navbar__menu, '- ', 0);
